@@ -1,0 +1,157 @@
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+
+  
+  .navbar-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+  }
+  
+  .navbar-email-and-location {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .navbar-email-and-location i,
+  .nav-bar-menu .fa-envelope,
+  .nav-bar-menu .fa-map{
+    color: #ff5722;
+    margin-right: 5px;
+  }
+  
+  .navbar-email {
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  .navbar-location {
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .navbar-social {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icon {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-left: 15px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .navbar-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .navbar-item {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .navbar-item.active {
+    color: red;
+  }
+  
+
+  .menu-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  .menu-items ul{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+  }
+  
+ 
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  nav .bars{
+    background: none;
+    border: none;
+    display: none;
+  }
+  
+  .nav-bar-menu{
+    display: none;
+  }
+  .nav-bar-menu ul{
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-bar-menu ul li {
+    width: 100%;
+    text-align: left;
+    padding: 15px 0px;
+  }
+  
+
+
+  @media (max-width: 768px) {
+    nav .bars{
+      display: block;
+    }
+    .menu-items{
+      display: none;
+    }
+    .navbar-top{
+      display: none;
+    }
+    .nav-bar-menu.active{
+      display: inline;
+    }
+  }

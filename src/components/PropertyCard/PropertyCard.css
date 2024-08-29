@@ -1,0 +1,98 @@
+.property-item {
+    flex: 1;
+    max-width: 28%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    text-align: center;
+
+}
+
+.property-card{
+    background-color: #fbfafa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.property-item:hover {
+    transform: scale(1.05);
+}
+
+.property-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.price-and-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.property-price {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #ff5722;
+}
+
+.properties-type {
+    background-color: #ffe0cc;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.property-name{
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.property-description {
+    text-align: left;
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.property-description span{
+    font-weight: 700;
+}
+
+.property-description div {
+    margin-bottom: 8px;
+}
+
+.property-card .property-button {
+    background: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.property-button button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0;
+    font-size: .9rem;
+}
+
+
+.bedrooms-and-bathrooms,
+.area-and-floor{
+    display: flex;
+    gap: 30px;
+}
+
+@media (max-width: 890px) {
+    .property-button button {
+        font-size: 1.1rem;
+    }
+}

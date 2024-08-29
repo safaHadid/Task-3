@@ -1,0 +1,34 @@
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 0;
+  }
+
+  .feature-item .feature-icon {
+    width: 45px;
+    height: 45px;
+    margin-top: -10px;
+  }
+
+  .feature-item .feature-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature-item .feature-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .feature-item .feature-description {
+    font-size: 1rem;
+    color: #aaa;
+    font-weight: 600;
+  }
+
+  .feature-item .featured-right hr {
+    width: 75%;
+    border: 1px solid #aaa;
+    margin: 9px auto;
+  }

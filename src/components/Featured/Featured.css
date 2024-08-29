@@ -1,0 +1,126 @@
+.featured-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 150px auto;
+  padding: 20px;
+  width: 85%;
+  max-width: 1200px;
+}
+
+.featured-container .featured-left {
+  flex: 1.5;
+  position: relative;
+}
+
+.featured-container .featured-img-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.featured-container .featured-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.featured-container .featured-icon {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  width: 80px;
+  height: 80px;
+  background-color: #f35525;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.featured-container .featured-center {
+  flex: 2;
+  padding: 0 30px;
+}
+
+.featured-container .featured-tag {
+  color: #f35525;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.featured-container .featured-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.featured-container .featured-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 8px 5px rgba(108, 103, 103, 0.2);
+  border-radius: 10px;
+  padding: 20px 26px;
+}
+
+.featured-container .feature-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 0;
+}
+
+.featured-container .feature-icon {
+  width: 45px;
+  height: 45px;
+  margin-top: -10px;
+}
+
+.featured-container .feature-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-container .feature-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.featured-container .feature-description {
+  font-size: 1rem;
+  color: #aaa;
+  font-weight: 600;
+}
+
+.featured-container .featured-right hr {
+  width: 75%;
+  border: 1px solid #aaa;
+  margin: 9px auto;
+}
+
+
+@media (max-width: 830px) {
+  .featured-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .featured-left{
+    width: 80%;
+  }
+
+  .featured-center{
+    margin: 40px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+  }
+  .featured-right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    margin: 10px auto;
+  }
+}

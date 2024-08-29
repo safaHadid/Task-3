@@ -1,0 +1,36 @@
+.pageheader {
+    width: 100%;
+    position: relative;
+}
+
+.pageheader .pageheader-img {
+    position: relative;
+}
+
+.pageheader .pageheader-img img {
+    object-fit: cover;
+    width: 100%;
+    min-height: 350px;
+}
+
+.pageheader .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.pageheader .text-container .text-title {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.pageheader .text-container .text {
+    font-weight: 800;
+    color: #fff;
+}

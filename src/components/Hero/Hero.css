@@ -1,0 +1,52 @@
+.hero-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-text{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .hero-title {
+    color: white;
+    font-size: 4rem;
+    text-align: left;
+    font-weight: bold;
+    padding-top: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .hero-text .hero-place{
+    display: inline;
+    background-color: white;
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+
+  
+  .carousel img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .hero-text{
+        top: 50%;
+        left: 50%;
+    }
+
+    .hero-title{
+        font-size: 2.8rem;
+    }
+
+    .carousel img {
+        height: 110vh;
+    }
+  }
